@@ -1,0 +1,23 @@
+{
+    "name": "luisozparr/adminlte_laravel_components",
+    "description": "This package contain multiple components for jeroennoten/laravel-adminlte",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "LuisOzuna",
+            "email": "lgozuna@gmail.com"
+        }
+    ],
+    "require": {
+        "jeroennoten/laravel-adminlte": "^1.24"
+    },
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit" : "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ozparr\\AdminlteComponents\\": "src"
+        }
+    }
+}
