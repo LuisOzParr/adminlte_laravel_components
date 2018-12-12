@@ -11,6 +11,7 @@ This package provided some laravel components using AdminLTE template https://ad
 2. Add the service provider to the providers in config/app.php:
 
         Ozparr\AdminlteComponents\AdminlteComponentServiceProvider::class
+        JeroenNoten\LaravelAdminLte\ServiceProvider::class,
         
 3. Publish the public assets of ```jeroennoten/laravel-adminlte```:
 
