@@ -15,7 +15,7 @@ slot('footer')
                         {!! $title !!}
                     @else
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed" aria-expanded="false">
-                            Collapsible Group Success
+                            {{$title}}
                         </a>
                     @endif
                 @endif
