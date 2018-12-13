@@ -26,8 +26,9 @@ You can use this components in the following way:
 #### box
 
 - Parameter: 
-  - ```className```: like class in html
-  - ```title```: box title
+  - ```className```: string
+  - ```title```: string
+  - ```collapse```: boolean // true,false
 - Slots: 
   - buttons
   - footer
@@ -49,9 +50,9 @@ You can use this components in the following way:
 
 Parameters:
 - Parameter: 
-  - ```id```: like id in html
-  - ```size```: width of modal
-  - ```title```: modal title  
+  - ```id```: string
+  - ```size```: string // "100px", "100%"
+  - ```title```: string 
 - Slots: 
   - footer
 - Example:
