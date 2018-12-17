@@ -7,7 +7,7 @@ slot('footer')
 -->
 <div class="box panle @isset($className){!! $className!!} @endisset">
     @if(isset($title) || isset($buttons))
-        <div class="box-header with-border">
+        <div class="box-header @if(isset($withBorder) && $withBorder == true)with-border @elseif(!isset($withBorder)) with-border @endif">
 
             <h3 class="box-title">
                 @if(isset($title))

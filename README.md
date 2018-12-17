@@ -29,6 +29,7 @@ You can use this components in the following way:
   - ```className```: string
   - ```title```: string
   - ```collapse```: boolean // true,false
+  - ```withBorder```: boolean // true,false
 - Slots: 
   - buttons
   - footer
