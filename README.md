@@ -49,7 +49,6 @@ You can use this components in the following way:
 
 #### modal
 
-Parameters:
 - Parameter: 
   - ```id```: string
   - ```size```: string // "100px", "100%"
@@ -67,3 +66,21 @@ Parameters:
     @endslot
 @endmodal 
 ```
+
+#### splitBtn
+
+- Parameters:
+  - ```classAction```: string
+  - ```classDropdown```: string
+  - ```propsAction```: string
+  - ```name```: string
+  - ```size```: string //lg sm xs flat
+
+- Example:
+ ```
+ @splitBtn(['size'=>'xs', 'name'=>'Options', 'propsAction'=>'disabled'])
+     <li><a>Edit</a></li>
+     <li class="divider"></li>
+     <li><a>Delete</a></li>
+ @endsplitBtn
+ ```

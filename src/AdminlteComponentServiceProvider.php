@@ -17,6 +17,7 @@ class AdminlteComponentServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/views', 'adminLTEComponents');
         Blade::component('adminLTEComponents::components.box', 'box');
         Blade::component('adminLTEComponents::components.modal', 'modal');
+        Blade::component('adminLTEComponents::components.splitButton', 'splitBtn');
     }
 
     /**
