@@ -1,7 +1,7 @@
 {
     "name": "luisozparr/adminlte_laravel_components",
     "description": "This package contain multiple components for jeroennoten/laravel-adminlte",
-    "license": "GPL3",
+    "license": "MIT",
     "authors": [
         {
             "name": "LuisOzuna",
