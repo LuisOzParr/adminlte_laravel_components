@@ -1,10 +1,10 @@
 <!--
-Parameters:
+PARAMETROS
 
-['id'=>'','size'=>'','title'=>'']
+['id'=>'','size'=>'','titulo'=>'']
 
-
-slot('footer')
+slots
+ $pie
 -->
 
 <div class="modal fade" id="{!! $id !!}" role="dialog" aria-labelledby="myModalLabel" style="display: none;" >
@@ -12,16 +12,16 @@ slot('footer')
         <div class="modal-content" >
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                @if(isset($title))
-                    <h3 class="modal-title"> {!! $title !!} </h3>
+                @if(isset($titulo))
+                    <h3 class="modal-title"> {!! $titulo !!} </h3>
                 @endif
             </div>
             <div class="modal-body">
                 {{ $slot }}
             </div>
-            @isset($footer)
+            @isset($pie)
                 <div class="modal-footer">
-                    {{ $footer }}
+                    {{ $pie  }}
                 </div>
             @endisset
         </div>
