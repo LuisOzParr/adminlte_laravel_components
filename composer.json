@@ -9,7 +9,8 @@
         }
     ],
     "require": {
-        "jeroennoten/laravel-adminlte": "^1.24"
+        "php" : "^7.2",
+        "jeroennoten/laravel-adminlte": "^3.0"
     },
     "minimum-stability": "dev",
     "require-dev": {
