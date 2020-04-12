@@ -12,6 +12,7 @@ use Ozparr\AdminlteComponents\View\Components\Modal\Index as Modal;
 use Ozparr\AdminlteComponents\View\Components\Tabs\Content;
 use Ozparr\AdminlteComponents\View\Components\Tabs\Option;
 use Ozparr\AdminlteComponents\View\Components\Tabs\Index as Tabs;
+use Ozparr\AdminlteComponents\View\Components\InfoBox\Index as InfoBox;
 
 class AdminlteComponentServiceProvider extends ServiceProvider
 {
@@ -31,6 +32,7 @@ class AdminlteComponentServiceProvider extends ServiceProvider
         Blade::component('tabs', Tabs::class);
         Blade::component('tabs.option', Option::class);
         Blade::component('tabs.content', Content::class);
+        Blade::component('infoBox', InfoBox::class);
     }
 
     /**

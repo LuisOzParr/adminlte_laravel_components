@@ -11,7 +11,7 @@ class Index extends Component
     /**
      * Create a new component instance.
      *
-     * @param $title
+     * @param string $title
      */
     public function __construct($title = '')
     {

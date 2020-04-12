@@ -35,6 +35,6 @@ class Index extends Component
 
     public function needBladeMethod()
     {
-        return $this->method != 'GET' || $this->method != 'POST';
+        return $this->method != 'GET' && $this->method != 'POST';
     }
 }

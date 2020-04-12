@@ -13,11 +13,11 @@ class Input extends Component
     /**
      * Create a new component instance.
      *
-     * @param $name
+     * @param null|string $name
      * @param string|null $icon
      * @param string $iconPosition
      */
-    public function __construct($name, $icon = null, $iconPosition = 'left')
+    public function __construct($name = null, $icon = null, $iconPosition = 'left')
     {
         $this->name = $name;
         $this->icon = $icon;

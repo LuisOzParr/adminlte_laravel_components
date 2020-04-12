@@ -12,7 +12,7 @@ class Index extends Component
     /**
      * Create a new component instance.
      *
-     * @param $sizeModal
+     * @param null|string $sizeModal
      * @param string $title
      */
     public function __construct($sizeModal = null, $title = '')
