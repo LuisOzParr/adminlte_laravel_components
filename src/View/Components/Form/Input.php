@@ -17,7 +17,7 @@ class Input extends Component
      * @param string|null $icon
      * @param string $iconPosition
      */
-    public function __construct($name, $icon = null, $iconPosition = 'left')
+    public function __construct($name = null, $icon = null, $iconPosition = 'left')
     {
         $this->name = $name;
         $this->icon = $icon;

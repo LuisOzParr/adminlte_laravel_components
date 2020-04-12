@@ -1,5 +1,7 @@
 <form {{$attributes->merge(['class'=>'form'])}} method="{{$getMethod}}">
-    @csrf
+    @if($method != 'GET')
+        @csrf
+    @endif
     @if($needBladeMethod)
         @method($method??'')
     @endif
