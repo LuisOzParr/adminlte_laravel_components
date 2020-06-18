@@ -1,12 +1,14 @@
 <div {{$attributes->merge(['class' => 'card'])}}>
-    <div class="card-header">
-        <h3 class="card-title">{{$title ?? ''}}</h3>
-        @isset($tools)
-            <div class="card-tools">
-                {{$tools}}
-            </div>
-        @endisset
-    </div>
+    @if($title)
+        <div class="card-header">
+            <h3 class="card-title">{{$title ?? ''}}</h3>
+            @isset($tools)
+                <div class="card-tools">
+                    {{$tools}}
+                </div>
+            @endisset
+        </div>
+    @endif
     <div class="card-body">
         {!! $body ?? '' !!} {!! $slot !!}
     </div>
