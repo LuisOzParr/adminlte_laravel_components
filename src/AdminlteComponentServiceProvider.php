@@ -13,6 +13,7 @@ use Ozparr\AdminlteComponents\View\Components\Tabs\Content;
 use Ozparr\AdminlteComponents\View\Components\Tabs\Option;
 use Ozparr\AdminlteComponents\View\Components\Tabs\Index as Tabs;
 use Ozparr\AdminlteComponents\View\Components\InfoBox\Index as InfoBox;
+use Ozparr\AdminlteComponents\View\Components\Callout\Index as Callout;
 
 class AdminlteComponentServiceProvider extends ServiceProvider
 {
@@ -33,6 +34,7 @@ class AdminlteComponentServiceProvider extends ServiceProvider
         Blade::component('tabs.option', Option::class);
         Blade::component('tabs.content', Content::class);
         Blade::component('infoBox', InfoBox::class);
+        Blade::component('callout', Callout::class);
     }
 
     /**

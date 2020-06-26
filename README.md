@@ -23,6 +23,21 @@ This package provided some laravel components using AdminLTE template https://ad
 
 You can use this components in the following way:
 
+## Callout
+* Parameters:
+  * `icon` string (default 'fas fa-info')
+  * `title` string
+  * `col` (Like col-md-*)
+* Slots:
+  * `body` (or slot)
+* Example:
+
+```
+<x-callout col="12" class="callout-info" title="Importante">
+    Hola mundo :D
+</x-callout>
+```
+    
 ## Card
 * Parameters:
   * `title` string (default '')
