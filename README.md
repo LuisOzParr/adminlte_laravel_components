@@ -107,6 +107,34 @@ You can use this components in the following way:
 </x-form.select>
 ```
 
+### textarea
+* Parameters:
+  * ``name`` string
+```
+<x-form.textarea name="description">
+    Description
+</x-form.textarea>
+```
+
+## Dropdown
+* Parameters:
+  * ``title`` string
+* slot: 
+  * `options`
+* Example:
+```
+<x-dropdown title="Options">
+    <a class="dropdown-item" href="#">
+        <i class="fas fa-edit"></i>
+        Edit
+    </a>
+    <a class="dropdown-item" href="#">
+        <i class="fas fa-trash-alt"></i>
+        Delete
+    </a>
+</x-dropdown>
+```
+
 ## infoBox
 
 * Parameters:
