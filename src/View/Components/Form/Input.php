@@ -9,6 +9,7 @@ class Input extends Component
     public $name;
     public $icon;
     public $iconPosition;
+    public $model;
 
     /**
      * Create a new component instance.
@@ -16,12 +17,14 @@ class Input extends Component
      * @param null|string $name
      * @param string|null $icon
      * @param string $iconPosition
+     * @param null $model
      */
-    public function __construct($name = null, $icon = null, $iconPosition = 'left')
+    public function __construct($name = null, $icon = null, $iconPosition = 'left', $model = null)
     {
         $this->name = $name;
         $this->icon = $icon;
         $this->iconPosition = $iconPosition;
+        $this->model = $model;
     }
 
     public function getId($attributes)

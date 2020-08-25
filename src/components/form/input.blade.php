@@ -7,7 +7,11 @@
                        id="{{$getId($attributes)}}"
                        type="{{$getType($attributes)}}"
                        name="{{$name}}"
+                       @if(isset($model))
+                       value="{{isset($model) ? $model->{$name} : ''}}"
+                       @else
                        value="{{old($name) ? old($name): (isset($value) ? $value : '')}}"
+                       @endif
                 >
             @endif
             <div class="input-group-prepend">
@@ -18,7 +22,11 @@
                        id="{{$getId($attributes)}}"
                        type="{{$getType($attributes)}}"
                        name="{{$name}}"
+                       @if(isset($model))
+                       value="{{isset($model) ? $model->{$name} : ''}}"
+                       @else
                        value="{{old($name) ? old($name): (isset($value) ? $value : '')}}"
+                       @endif
                 >
             @endif
         </div>
@@ -27,7 +35,11 @@
                id="{{$getId($attributes)}}"
                type="{{$getType($attributes)}}"
                name="{{$name}}"
+               @if(isset($model))
+               value="{{isset($model) ? $model->{$name} : ''}}"
+               @else
                value="{{old($name) ? old($name): (isset($value) ? $value : '')}}"
+               @endif
         >
     @endif
     <div class="invalid-feedback">{{$errors->first($name)}}</div>
