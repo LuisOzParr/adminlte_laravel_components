@@ -7,15 +7,18 @@ use Illuminate\View\Component;
 class Textarea extends Component
 {
     public $name;
+    public $value;
 
     /**
      * Create a new component instance.
      *
      * @param string $name
+     * @param string $value
      */
-    public function __construct($name)
+    public function __construct($name, $value = null)
     {
         $this->name = $name;
+        $this->value = $value;
     }
 
     /**
