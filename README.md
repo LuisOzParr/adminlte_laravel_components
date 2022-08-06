@@ -159,12 +159,12 @@ You can use this components in the following way:
     modal open
 </button>
 
-<x-modal.index 'title'=>'Modal' id="myModal" size-modal="modal-xl">
+<x-modal title='Modal' id="myModal" size-modal="modal-xl">
     Hello world
     <x-footer>
          <button type="submit" class="btn btn-primary" >Success</button>
     </x-footer>
-</x-modal.index>
+</x-modal>
 ```
 
 ## Tabs
