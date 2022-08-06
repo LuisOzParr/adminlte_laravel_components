@@ -73,9 +73,9 @@ You can use this components in the following way:
   * `method` string
 * Example:
 ```
-<x-form.index :action="route('lotes.create')" method="GET">
+<x-form :action="route('lotes.create')" method="GET">
     Form body :D
-</x-form.index> 
+</x-form> 
 ```
     
 ### input
